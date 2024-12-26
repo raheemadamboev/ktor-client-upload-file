@@ -1,0 +1,38 @@
+[versions]
+
+compose = "2024.12.01"
+compose-activity = "1.9.3"
+compose-lifecycle = "2.8.7"
+compose-viewmodel = "2.8.7"
+core = "1.15.0"
+ktor = "2.3.12"
+
+android = "8.7.3"
+kotlin = "2.0.21"
+
+sdk-min = "26"
+sdk-compile = "35"
+sdk-target = "35"
+java-target = "17"
+
+[libraries]
+
+compose = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
+compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
+compose-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "compose-viewmodel" }
+core = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+
+[plugins]
+
+android = { id = "com.android.application", version.ref = "android" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
